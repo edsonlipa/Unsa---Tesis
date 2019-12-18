@@ -1,0 +1,66 @@
+\documentclass[a4paper,12pt,oneside,openright]{book} 
+\input{Includes.tex}
+\input{colors.tex}
+
+\pagenumbering{Roman} 
+
+\title{Clasificación de arritmias en
+electrocardiogramas (ECG) mediante
+Convolutional Neural Networks 2D}
+\author{EDSON VICTOR LIPA URBINA}
+\orientador{Mg. FRANCI SUNI LOPEZ}
+% \jurado
+% {
+% \\ Dr. David Menotti -- Universidade Federal do Paraná  -- Brasil
+% \\ Dr. Juan Carlos Gutierrez -- Universidad Católica San Pablo -- Perú
+% \\ Dr. Erick Gomez Nieto -- Universidade de Sao Paulo -- Brasil
+% \\ Dr. Alex Cuadros Vargas -- Universidad Católica San Pablo -- Perú
+% }
+
+\dedicado{A .....}
+
+\begin{document}
+% usar cuando el babel usa spanish
+\shorthandoff{>}
+\shorthandoff{<}
+
+\maketitle 
+
+\include{abreviaturas}
+%\input{Agradecimientos}
+%\input{Abstract}
+\input{Resumen} 
+
+\tableofcontents 
+\listoftables 
+\addcontentsline{toc}{chapter}{Índice de tablas}
+%\cleardoublepage
+\listoffigures 
+\addcontentsline{toc}{chapter}{Índice de figuras}
+%\listoftables 
+%\listoffigures 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%   En esta parte deberas incluir los archivos de tu tesis   %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage 
+\pagenumbering{arabic} 
+
+
+
+\input{Chapters/Cap_1}
+\input{Chapters/Cap_2}
+\input{Chapters/Cap_3}
+\input{Chapters/Cap_4}
+\input{Chapters/Cap_5}
+\input{conclusiones}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\bibliographystyle{apalike}
+\bibliographystyle{apabrahand}
+\bibliography{Bibliog}
+\addcontentsline{toc}{chapter}{Bibliografía}
+
+\end{document}

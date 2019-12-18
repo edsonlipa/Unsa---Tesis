@@ -1,0 +1,62 @@
+ \externaldocument{Chapters/Cap_2.tex}
+ \externaldocument{Chapters/Cap_3.tex}
+ \externaldocument{Chapters/Cap_4.tex}
+ \externaldocument{Chapters/Cap_5.tex}
+
+\chapter{Introducción}
+\section{Motivación y contexto}
+
+La adherencia terapéutica es uno de los principales factores que permite definir el éxito de un tratamiento médico. La \ac{OMS} \footnote{http://www.who.int/en/} define la adherencia terapéutica como ``\textit {el grado en que el comportamiento de una persona -- tomar el medicamento, seguir un régimen alimenticio y ejecutar cambios del modo de vida -- se corresponde con las recomendaciones acordadas de un prestador de asistencia sanitaria"} \citep{who}.
+
+\section{Contexto y Motivación}
+
+De acuerdo a las estadísticas de enfermedad cardiovascular \ac{ECV} de la Organización Mundial de la Salud \ac{OMS}\cite{WHO}, las ECV son la principal causa de muerte en todo el mundo. Además, la detección de anomalías en señales biológicas obtenidas del corazón, es decir, la detección de arritmias, ha atraído una atención significativa entre los investigadores y los profesionales.Por esta razón, existe la necesidad de desarrollar un enfoque rentable y eficaz para aliviar este problema global.\cite{HRS}
+% En general, las enfermedades cardiovasculares se clasifican en tres grupos: circulatorio, eléctrico y estructural .
+
+En 2015 murieron por esta causa 17,7 millones de personas, lo cual representa un 31\% de todas las muertes registradas en el mundo. De estas muertes, 7,4 millones se debieron a la cardiopatía coronaria, y 6,7 millones, a los accidentes vasculares cerebrales (AVC)\cite{WHO}. 
+La enfermedad de las arterias coronarias (EAC) (enfermedad relacionada con la circulación coronaria) es la forma más común de enfermedad cardiovascular \cite{CAD}. 
+
+La etapa temprana de la EAC normalmente no produce síntomas hasta que la enfermedad avanza a una etapa avanzada. Los controles de salud pre-sintomáticos pueden descubrir una enfermedad temprana y evitar una mayor progresión de la enfermedad con un tratamiento oportuno. El electrocardiograma (ECG) es una herramienta de diagnóstico ampliamente accesible que registra la actividad eléctrica del corazón \cite{diag}.
+Sin embargo, el diagnóstico manual de las señales de ECG es muy desafiante y tedioso, ya que las señales varían morfológicamente.  Por lo tanto, se inicia un sistema de diagnóstico asistido por computadora para superar estas limitaciones de la inspección visual de las señales de ECG. Hay numerosos trabajos propuestos en el soporte de decisión computarizado utilizando señales de ECG para diagnosticar los diferentes tipos de afecciones cardíacas \cite{CAD}.
+
+\section{Definición del problema}
+
+La detección y la clasificación de arritmias en electrocardiogramas (ECG) esta fuertemente estudiada  basados en diferentes enfoques y métodos, pero el enfoque de visualizar esta señal para luego obtener los datos dados para el entrenamiento esta iniciando en el campo del procesamiento y análisis de series temporales.
+\section{Justificación}
+
+Articulos como el de Tae Joon Jun et al. \cite{jun2018ecg}  validan que un clasificador CNN  con las imágenes de ECG transformadas a imagenes puede lograr una excelente precisión de clasificación sin ningún procesamiento previo manual de las señales de ECG, como el filtrado de ruido, la extracción de características y la reducción de características, y una visualización de las señales en imagenes es mas intuitiva que las de una gráfica en un plano cartesiano para un paciente o para alguien que no sea una profesional de la salud.
+
+\section{Objetivos}
+
+El objetivo principal es desarrollar un modelo, sistema que permita clasificar efectivamente los diferentes tipos de arritmia , que además pueda dar una visualización mas intuitiva de un mal funcionamiento del corazón y comparar estos resultados únicamente con métodos basados en\textit{deep learning} entre los años 2017 a 2019. 
+
+\subsection{Objetivos Específicos}
+\begin{enumerate}
+    \item Tomar muestras de la base de datos de la MIT-BIH para el estudio de la señal ECG.
+    \item Segmentación de la serie temporal por \textit{heart beat} (ventaneo).
+    \item Conversión de \textit{heart beat} a imagen mediante codificación polar.
+    \item Entrenar diferentes arquitectura de CNN para la clasificación de arritmias .  
+    \item Comparar con los modelos propuestos para la clasificación de señales biológicas.
+    
+\end{enumerate}
+
+\section{Organización de la tesis}
+
+\textbf{Capitulo 2:} Se explica la definición de un electrocardiograma y como es que esto se utiliza por los profesionales de la salud, además de lo que es una arritmia los diferentes tipos de estas y los problemas que estos pueden causar, tambien se explican las Redes Neuronales Convolucionales, el modelo y sus funciones.
+\textbf{Capitulo 3:} Se extiende mas los algunos de los métodos usados para la clasificación o detección de arritmias basados únicamente en \textit{deep learning} excluyendo transformadas por wavalets o extracción de características con machine learning.
+\textbf{Capitulo 4:} Se explica el método propuesto. 
+\textbf{Capitulo 5:} Se dan a conocer los detalles de la experimentación como la base de datos usada y los resultados de estas. 
+
+
+
+\begin{itemize}
+    \item  \ref{section_marco_teorico} y \ref{section_trabajos_relacionados}.
+    
+    
+    \item  \ref{chapter:experiment}.
+    
+    \item  \ref{section:hcr}.
+    
+    \item \ref{chapter:experiment}
+\end{itemize}
+
